@@ -1,0 +1,111 @@
+<html>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+
+function moveup()
+{
+redball.top=redball.top-5;
+}
+function movedown()
+{
+redball.top=redball.top+5;
+}
+function moveleft()
+{
+redball.left=redball.left-5;
+}
+
+function moveright()
+{
+redball.left=redball.left+5;
+}
+
+
+function movesquare()
+{
+redball.left=redball.left+50;
+redball.left=redball.left+50;
+redball.left=redball.left+50;
+redball.left=redball.left+50;
+redball.top=redball.top+50;
+redball.top=redball.top+50;
+redball.top=redball.top+50;
+redball.top=redball.top+50;
+
+redball.left=redball.left-50;
+redball.left=redball.left-50;
+redball.left=redball.left-50;
+redball.left=redball.left-50;
+redball.top=redball.top-50;
+redball.top=redball.top-50;
+redball.top=redball.top-50;
+redball.top=redball.top-50;
+
+
+}
+function moveupright()
+{
+moveup()
+moveright()
+}
+function movedownright()
+{
+movedown()
+moveright()
+}
+function movelefttop()
+{
+moveleft()
+}
+
+function movetriangle()
+{moveupright()
+moveupright()
+moveupright()
+moveupright()
+moveupright()
+moveupright()
+moveupright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+
+
+
+}
+
+</script>
+</head>
+<body>
+<img id="redball" src="redball.jpg" alt="redball"/>
+
+<button type="button" onclick="moveup()">UP</button>
+<button type="button" onclick="movedown()">DOWN</button>
+<button type="button" onclick="moveleft()">LEFT</button>
+<button type="button" onclick="moveright()">right</button>
+<button type="button" onclick="movesquare()">movesquare</button>
+<button type="button" onclick="moveupright()">up right</button>
+<button type="button" onclick="movedownright()">downright</button>
+<button type="button" onclick="moveleft()">left</button>
+<button type="button" onclick="movetriangle()">movetriangle</button>
+</body>
+</html>

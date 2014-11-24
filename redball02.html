@@ -1,0 +1,246 @@
+<html>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+
+function moveup()
+{
+redball.top=redball.top-5;
+}
+function movedown()
+{
+redball.top=redball.top+5;
+}
+function moveleft()
+{
+if(redball.left = 0){
+console.lug("do nothing");
+}else{
+redball.left=redball.left-5;
+}
+}
+function moveright()
+{
+redball.left=redball.left+5;
+}
+
+
+function movesquare()
+{
+redball.left=redball.left+50;
+redball.left=redball.left+50;
+redball.left=redball.left+50;
+redball.left=redball.left+50;
+redball.top=redball.top+50;
+redball.top=redball.top+50;
+redball.top=redball.top+50;
+redball.top=redball.top+50;
+
+redball.left=redball.left-50;
+redball.left=redball.left-50;
+redball.left=redball.left-50;
+redball.left=redball.left-50;
+redball.top=redball.top-50;
+redball.top=redball.top-50;
+redball.top=redball.top-50;
+redball.top=redball.top-50;
+
+
+}
+function moveupright()
+{
+moveup()
+moveright()
+}
+function movedownright()
+{
+movedown()
+moveright()
+}
+function movelefttop()
+{
+moveleft()
+}
+
+function movetriangle()
+{moveupright()
+moveupright()
+moveupright()
+moveupright()
+moveupright()
+moveupright()
+moveupright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+}
+function moveoctagon(){
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+}
+
+function movex () {
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+}
+
+function bounce () {
+	for(var i=1;i<=10;i ++) {
+		moveup();
+		moveup();
+		moveup();
+		movedown();
+		movedown();
+		movedown();
+}
+
+}		
+function moveup10(){
+	for(var i = 1; i<=10; i ++){
+	moveup();
+	}
+}
+</script>
+</head>
+<body>
+<img id="redball" src="redball.jpg" alt="redball"/>
+
+<button onclick="movetriangle()"><img src= "triangle.png" height=30px; width=30px; id="triangle.jpg"></button>
+<button onclick="moveup10()">move up 10 </button>
+<button onclick="bounce()">bounce</button>
+<button onclick="moveoctagon()">octagon</button>
+<button onclick="movex()">movex</button>
+
+
+<table>		
+<tr>
+<td><button type="button" onclick="moveup()"><img src="up.jpg" height=30px width=30px></button></td>
+<td><button type="button" onclick="movedown()"><img src="down.jpg" height=30px width=30px></button></td>
+<td><button type="button" onclick="moveleft()"><img src="left.jpg" height=30px width=30px></button></td>
+</tr>
+
+<tr>
+<td><button type="button" onclick="moveright()"><img src="right.jpg" height=30px width=30px></button></td>
+<td><button type="button" onclick="movesquare()">square</button></td>
+<td><button type="button" onclick="moveupright()"><img src="up-right.jpg" height=30px width=30px></button></td>
+</tr>
+
+<tr>
+<td><button type="button" onclick="movedownright()"><img src="downright.jpg" height=30px width=30px></button></td>
+<td><button type="button" onclick="moveleft()"><img src="left.jpg" height=30px width=30px></button></td>
+<td><button type="button" onclick="movetriangle()">movetriangle</button></td>
+</tr>
+
+</table>
+</body>
+</html>
